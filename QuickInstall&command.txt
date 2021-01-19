@@ -1,0 +1,151 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "QuickInstall&command.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyOt/Qh1MPKwL/PwiSfrOq9R",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MrsPerfection/homework/blob/main/QuickInstall%26command.txt\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YnQr6qi6RiPH"
+      },
+      "source": [
+        "# Install easily tools with conda:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PSN2zIS5PQFe"
+      },
+      "source": [
+        "#HMMER Instaltion with conda:\n",
+        "conda install -c biocore hmmer   "
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FUhCd8PbPgAS"
+      },
+      "source": [
+        "#Kallisto instal via conda\n",
+        "conda install -c bioconda kallisto"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FqdPdIRKPo_Q"
+      },
+      "source": [
+        "#Install STAR with conda\n",
+        "conda install -c bioconda star"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uNDmm9IIQd0x"
+      },
+      "source": [
+        "# Command good to know:\n",
+        "\n",
+        "`chmod a+x` --> donne les droit d'execution sans modifier les precedent droits.\n",
+        "\n",
+        "`whoami `--> give name of the computer\n",
+        "`ipconfig `--> give infos about ip of the machine\n",
+        "\n",
+        "`head` --> show first lines of files\n",
+        "`tail` --> show end lines of files\n",
+        "`cat`  --> show the full files on the shell\n",
+        "\n",
+        "output files: `>` if files deja present = l'écrase .\n",
+        "             ` >>` if files deja present = une copie.\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xEAgyLHOQ86a"
+      },
+      "source": [
+        "`hmmsearch`: search a model  agaisnt a sequneces files\n",
+        "```\n",
+        "\t\t   options: -E (x) --> specify limited evalue for results \n",
+        "\t\t   \t\t\t-T (x) --> specify limited scores for results\n",
+        "\t\t   Usage: \n",
+        "\t\t   \t\t\thmmsearch option file-model file-seqs > name-file-output\n",
+        "\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\t\t   \t\t\n",
+        "\n",
+        "`hmmbuild`  --> build a profile file (.hmm) from an alignement file (.sto)\n",
+        "```\n",
+        "\t\t\t Usage: hmmbuild file.hmm file.sto \n",
+        "```\n",
+        "\n",
+        "`hmmalign`  --> can make profile file (.hmm file) from a seqs files (will align seqs).\n",
+        "```\n",
+        "\t\t\t  Usage: hmmalign [-options] <hmmfile> <seqfile>\n",
+        "```\n",
+        "\t\t\t  \n",
+        "\t\t\t  "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "M97VPGbpRrVI"
+      },
+      "source": [
+        "# Server Connexion: \n",
+        "\n",
+        "—> Ssh nom_session_sur_server@IP_du_server  \n",
+        "—> mdp du server\n",
+        "\n",
+        "On peut mnt accéder direcement au bureau du server via un file connecter:   \n",
+        "`sshfs fsneca@192.168.6.85:/home/fseneca/Desktop /home/ecoimmuno/Desktop/Ecoimmuno_server/`\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QCra3Oj41rYN"
+      },
+      "source": [
+        "Installation de Anaconda (pour avoir conda):\n",
+        "1)download installer prompt\n"
+      ]
+    }
+  ]
+}
